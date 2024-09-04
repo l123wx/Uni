@@ -1,0 +1,55 @@
+{
+  "name": "@l123wx/shared",
+  "version": "0.0.1",
+  "packageManager": "pnpm@9.1.4+sha512.9df9cf27c91715646c7d675d1c9c8e41f6fce88246f1318c1aa6a1ed1aeb3c4f032fcdf4ba63cc69c4fe6d634279176b5358727d8f2cc1e65b65f43ce2f8bfb0",
+  "description": "",
+  "author": "Elvis Liao <https://github.com/l123wx>",
+  "license": "MIT",
+  "keywords": [],
+  "main": "src/index.ts",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "lint": "eslint .",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.21",
+    "vue": "3.2.45",
+    "vue-router": "4.1.4"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.20.0",
+    "@chromatic-com/storybook": "1.7.0",
+    "@storybook/addon-actions": "^8.2.9",
+    "@storybook/addon-console": "^3.0.0",
+    "@storybook/addon-essentials": "^8.2.9",
+    "@storybook/addon-interactions": "^8.2.9",
+    "@storybook/addon-links": "^8.2.9",
+    "@storybook/addon-onboarding": "^8.2.9",
+    "@storybook/blocks": "^8.2.9",
+    "@storybook/test": "^8.2.9",
+    "@storybook/vue3": "^8.2.9",
+    "@storybook/vue3-vite": "^8.2.9",
+    "@types/lodash-es": "^4.17.12",
+    "@typescript-eslint/eslint-plugin": "^7.11.0",
+    "@vitejs/plugin-vue": "^5.1.2",
+    "@vue/test-utils": "^2.4.6",
+    "eslint": "9.4.0",
+    "eslint-plugin-storybook": "^0.8.0",
+    "eslint-plugin-vitest": "^0.5.4",
+    "storybook": "^8.2.9",
+    "storybook-vue3-router": "^5.0.0",
+    "tsx": "^4.11.2",
+    "typescript": "^5.4.5",
+    "vite": "^5.4.2",
+    "vitest": "^1.6.0",
+    "vue-jest": "^3.0.7"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  }
+}
