@@ -1,2 +1,10 @@
+# dependencies
 node_modules
+
+# output
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+# log
 *storybook.log
