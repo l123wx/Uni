@@ -73,7 +73,9 @@ import { Button } from 'uni'
 
  - `style` 修改代码格式
 
- - `chore` 其他添加注释、升级依赖等
+ - `chore` 添加注释、添加测试用例、升级依赖等
+
+ - `refactor` 完全不涉及功能改动的代码重构，如果影响到了功能，请使用 `fix` 或者 `feat`
 
 `feat` 和 `fix` 会记录到 Changelog 中，如果不是功能修改或者 bug 修复，尽量不要使用这两个标签。
 
@@ -88,7 +90,7 @@ import { Button } from 'uni'
 提交新代码的时候需要确保所有测试用例都通过。
 
 ```sh
-nr story
+nr storybook
 
 nr test:cy-run
 ```

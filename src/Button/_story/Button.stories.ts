@@ -8,10 +8,17 @@ export default {
 export const ButtonBasic: StoryObj = {
   render: () => ({
     template: `
-      <Button>Uni Button</Button>
+      <Button @click="handleButtonClick">Uni Button</Button>
     `,
     components: {
       Button,
     },
+    setup() {
+      const handleButtonClick = () => {
+        console.log('click')
+      }
+
+      return { handleButtonClick }
+    }
   }),
 }
