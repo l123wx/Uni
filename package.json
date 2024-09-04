@@ -14,7 +14,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "test:cy": "npx wait-on http://127.0.0.1:6006 && \"./node_modules/.bin/cypress\" open",
-    "cypress:coverage": "npx wait-on http://127.0.0.1:6006 && \"./node_modules/.bin/cypress\" run"
+    "test:cy-run": "npx wait-on http://127.0.0.1:6006 && \"./node_modules/.bin/cypress\" run"
   },
   "dependencies": {
     "element-plus": "^2.8.1",

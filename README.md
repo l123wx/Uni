@@ -52,3 +52,43 @@ import { Button } from 'uni'
 ### Button
 
 功能与 Element Plus Button 一致，组件二开&引用的示例组件
+
+## 贡献代码
+
+ - 安装 lts 版本的 nodejs
+
+ - 终端运行 `corepack enable`
+
+ - 推荐使用 `@antfu/ni` 工具执行 npm 命令，`ni => npm install`，`nr => npm run`
+
+### git commit 规范
+
+#### 标签
+
+ - `feat` 添加了新组件、新功能
+
+ - `fix` 修复了 bug
+
+ - `docs` 修改了文档
+
+ - `style` 修改代码格式
+
+ - `chore` 其他添加注释、升级依赖等
+
+`feat` 和 `fix` 会记录到 Changelog 中，如果不是功能修改或者 bug 修复，尽量不要使用这两个标签。
+
+#### 内容
+
+注明改动到的组件以及改动的内容，如：`feat(Button): 添加点击按钮回调事件` 或 `feat: [Button] 添加点击按钮回调事件`
+
+### 测试
+
+在组件目录下的 `_story/*.stories.ts` 中添加 story，在 `__test__` 下创建单元测试，对组件功能进行测试。
+
+提交新代码的时候需要确保所有测试用例都通过。
+
+```sh
+nr story
+
+nr test:cy-run
+```
