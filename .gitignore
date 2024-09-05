@@ -6,5 +6,8 @@ cypress/videos/
 cypress/screenshots/
 cypress/downloads/
 
+docs/.vitepress/dist
+docs/.vitepress/cache
+
 # log
 *storybook.log

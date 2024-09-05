@@ -14,7 +14,10 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "test:cy": "npx wait-on http://127.0.0.1:6006 && \"./node_modules/.bin/cypress\" open",
-    "test:cy-run": "npx wait-on http://127.0.0.1:6006 && \"./node_modules/.bin/cypress\" run"
+    "test:cy-run": "npx wait-on http://127.0.0.1:6006 && \"./node_modules/.bin/cypress\" run",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
     "element-plus": "^2.8.1",
@@ -48,6 +51,7 @@
     "tsx": "^4.11.2",
     "typescript": "^5.4.5",
     "vite": "^5.4.2",
+    "vitepress": "^1.3.4",
     "vitest": "^1.6.0"
   },
   "eslintConfig": {
