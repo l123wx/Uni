@@ -15,10 +15,11 @@ export const ButtonBasic: StoryObj = {
     },
     setup() {
       const handleButtonClick = () => {
+        // eslint-disable-next-line no-console
         console.log('click')
       }
 
       return { handleButtonClick }
-    }
+    },
   }),
 }
